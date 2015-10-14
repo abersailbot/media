@@ -1,6 +1,6 @@
 media
 =====
 
-![Alt text](/abersailbot-logo-paths.svg?raw=true)
+![logo](https://rawgit.com/abersailbot/media/master/abersailbot-logo-paths.svg)
 
 Logos and other miscellaneous media.
