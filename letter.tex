@@ -1,0 +1,66 @@
+\documentclass{article}
+
+\usepackage[dvinames]{xcolor}
+
+\usepackage[top=2in,left=1.5in,bottom=0.5in,right=0.625in]{geometry}
+\usepackage{graphicx}
+\usepackage[colorlinks=false,
+            pdfborder={0 0 0},
+            ]{hyperref}
+\usepackage{lipsum}
+\usepackage[absolute]{textpos}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+\usepackage[oldstylenums]{kpfonts}
+\usepackage[T1]{fontenc}
+
+\parindent0pt
+\setlength{\parskip}{0.8\baselineskip}
+\raggedright
+\pagestyle{empty}
+
+\definecolor{sailbotblue}{RGB}{30,30,192}
+\definecolor{sailbotgray}{HTML}{5e6a71}
+\urlstyle{sf}
+
+\begin{document}
+
+\today
+\bigskip
+
+Anon\\
+Department of Thing\\
+A University \\
+Wisetown, Wise\ \ CB1 47X\\
+UK
+
+Dear Mr.~Personman:
+
+\lipsum[1]
+
+Sincerely,
+\vspace{4\baselineskip}
+
+Mr. Boat \\
+
+\begin{textblock*}{6.375in}(1.5in,1.4in)
+
+\begin{textblock*}{2in}[1.1,0.65](1.5in,1.33in)
+    \includegraphics[width=3in]{abersailbot-logo}
+\end{textblock*}
+
+    \sffamily
+    \hfill \color{sailbotgray} AberSailbot\\
+    \hfill Department of Computer Science, \\
+    \hfill Aberystwyth University
+\end{textblock*}
+\begin{tikzpicture}[remember picture,overlay]
+    \draw[color=sailbotblue,line width=1pt] (current page.north west)+(1.5in,-1.33in) -- ($(-0.625in,-1.33in)+(current page.north east)$);
+\end{tikzpicture}
+
+\vfill
+{\footnotesize\color{sailbotgray}\sffamily
+ \url{sailbot@aber.ac.uk} \textbullet\ \url{http://abersailbot.co.uk} \textbullet\ \url{https://github.com/abersailbot}
+}
+\end{document}
