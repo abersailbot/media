@@ -1,5 +1,12 @@
 \documentclass[12pt]{beamer}
 
+\newif\ifbob
+\bobtrue
+\newif\ifkitty
+\kittytrue
+\newif\ifdewi
+\dewitrue
+
 \begin{document}
  
   \begingroup
@@ -14,5 +21,23 @@
   \begin{frame}
     \frametitle{Random Intro Page}
   \end{frame}
+  
+  \ifbob
+  \begin{frame}
+    \frametitle{Bob page}
+  \end{frame}  
+  \fi  
+  
+  \ifkitty
+  \begin{frame}
+    \frametitle{kitty page}
+  \end{frame} 
+  \fi 
+  
+  \ifdewi
+  \begin{frame}
+    \frametitle{dewi page}
+  \end{frame} 
+  \fi 
   
 \end{document}
